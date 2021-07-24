@@ -1,7 +1,15 @@
 #!/usr/bin/env bash
 
-PORT=8000
+if [ "$1" != "" ]; then
+   HOSTNAME=$1
+else
+   HOSTNAME="localhost"
+fi
+
+PORT=5000
+echo "Host: $HOSTNAME"
 echo "Port: $PORT"
+
 
 # POST method predict
 curl -d '{  
@@ -25,4 +33,4 @@ curl -d '{
    }
 }'\
      -H "Content-Type: application/json" \
-     -X POST http://localhost:$PORT/predict
+     -X POST http://$HOSTNAME:$PORT/predict
