@@ -8,10 +8,13 @@ install:
 test:
 	#python -m pytest -vv --cov=myrepolib tests/*.py
 	#python -m pytest --nbval notebook.ipynb
-
+	python -m pytest -vv test_hello.py
 
 lint:
 	#hadolint Dockerfile #uncomment to explore linting Dockerfiles
 	pylint --disable=R,C,W1203,W0702 app.py
+
+loadtest:
+	python -m locust -f locustfile.py --headless -u 10 -r 10 --run-time 1m
 
 all: install lint test
