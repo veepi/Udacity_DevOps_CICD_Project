@@ -1,7 +1,15 @@
 #!/usr/bin/env bash
 
+if [ "$1" != "" ]; then
+   APP_NAME=$1
+else
+   APP_NAME="flask-pred-app"
+fi
+
 PORT=443
+echo "App name: $APP_NAME"
 echo "Port: $PORT"
+
 
 # POST method predict
 curl -d '{
@@ -25,5 +33,5 @@ curl -d '{
    }
 }'\
      -H "Content-Type: application/json" \
-     -X POST https://<yourappname>.azurewebsites.net:$PORT/predict 
+     -X POST https://$APP_NAME.azurewebsites.net:$PORT/predict 
      #your application name <yourappname>goes here
