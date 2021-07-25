@@ -1,17 +1,21 @@
 # Overview
 
-<TODO: complete this with an overview of your project>
+This is a project for the Udacity Cloud DevOps course. The objective is to demonstrate cloud-based Continous Integration/Continous Delivery (CI/CD) with a course-provided Python web application. That web appliction will be deployed in Azure as an Azure Web App, with continous integration and delivery through GitHub and Azure Pipelines. 
 
 ## Project Plan
-<TODO: Project Plan
 
-* A link to a Trello board for the project
-* A link to a spreadsheet that includes the original and final project plan>
+* The Trello board for the project could be found here: https://trello.com/b/kzbnPlqm 
+* Spreadsheets with the original and final project plans are in the Github repo here: <TODO: Add spreadsheet>
 
 ## Instructions
 
-<TODO:  
+### Architecture - CI/CD setup
+
+
+<TODO:
 * Architectural Diagram (Shows how key parts of the system work)>
+
+### Instructions for running the Python project
 
 <TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
 
@@ -42,10 +46,11 @@ Port: 443
 
 ## Enhancements
 
-<TODO: A short description of how to improve the project in the future>
+Following are to be considered as future enhancements for this project:
+
+* <TODO: >
+* Currently this project uses GitHub for code version control, GitHub Actions for CI, and Azure Pipelines for CD. To simplify the architecture and to remove reliance of muliple platforms, move to either Azure or GitHub as the single version control and CI/CD platform.
 
 ## Demo 
 
-<TODO: Add link Screencast on YouTube>
-
-
+A video demonstration of the project is available here: <TODO: Add link Screencast on YouTube>
