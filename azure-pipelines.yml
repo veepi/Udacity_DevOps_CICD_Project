@@ -38,14 +38,13 @@ stages:
         versionSpec: '$(pythonVersion)'
       displayName: 'Use Python $(pythonVersion)'
 
-    - script: |
+    - script: |                
         python -m venv antenv
         source antenv/bin/activate
-        python -m pip install --upgrade pip
-        pip install setup
-        pip install -r requirements.txt
+        make install
+        make test
       workingDirectory: $(projectRoot)
-      displayName: "Install requirements"
+      displayName: "Install requirements and run tests"
 
     - task: ArchiveFiles@2
       displayName: 'Archive files'
@@ -59,7 +58,7 @@ stages:
     - upload: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
       displayName: 'Upload package'
       artifact: drop
-
+      
 - stage: Deploy
   displayName: 'Deploy Web App'
   dependsOn: Build
