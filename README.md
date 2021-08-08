@@ -10,7 +10,7 @@ This project was prepared for the Udacity Cloud DevOps course. The objective is 
 ## Project Plan
 
 * The Trello board for the project could be found here: https://trello.com/b/kzbnPlqm 
-* Spreadsheets with the original and final project plans are in the Github repo here: <TODO: Add spreadsheet>
+* Spreadsheets with the original and final project plans are in the Github repo at [docs/VP_Proj2_Project Plan.xlsx](./docs/VP_Proj2_Project%20Plan.xlsx)
 
 ---
 
