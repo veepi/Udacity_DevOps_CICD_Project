@@ -101,4 +101,5 @@ Following are to be considered as future enhancements for this project.
 
 ## Demo 
 
-A video demonstration of the project is available here: <TODO: Add link Screencast on YouTube>
+A video demonstration of the project is available here:  
+[![YouTube video link](https://img.youtube.com/vi/XlUzBRtIfns/0.jpg)](https://www.youtube.com/watch?v=XlUzBRtIfns)
